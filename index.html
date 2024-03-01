@@ -7,7 +7,16 @@
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="assets/developers.png" type="image/x-icon">
+    <!-- Google Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
+          #techTable{
+            width: 50%;
+          
+            
+          }
          .icon{
           padding-right: 20px;
          }
@@ -17,10 +26,12 @@
          }
          li{
           padding-top:10px ;
+          font-family: 
          }
 
         #nav{
           margin-right: 20px;
+          font-family: "Roboto", sans-serif;
         }
 
        
@@ -40,6 +51,7 @@
           color: blue;
           font-weight: bold;
           margin-right: 20px;
+          font-family: "Poppins", sans-serif;
      
 
          
@@ -47,9 +59,13 @@
       .heading{
         border: 5px;
         padding: 5px;
-        background-color: beige;
-        font-weight: bolder;
-        color:red
+        background-color: rgb(225, 225, 168);
+        font-weight: bolder; 
+        
+        font-family: "Roboto", sans-serif;
+
+
+      
 
       }
       .header-info{
@@ -59,6 +75,31 @@
       #resume-text{
         margin-left: 10px;
       }
+      table,th,tr,td{
+        border: 2px solid rgb(174, 244, 244);
+        border-collapse:collapse ;
+        font-family: "Poppins", sans-serif;
+        td,th{
+          padding: 10px;
+        }
+      }
+      #copyright{
+        font-family: "Poppins", sans-serif;
+      }
+      #listSummary{
+        font-family: "Poppins", sans-serif;
+
+
+      }
+      #head{
+        font-family: "Poppins", sans-serif;
+      }
+      p{
+        font-family: "Poppins", sans-serif;
+      }
+      #management{
+        padding: 15px;
+      }
 
 
     </style>
@@ -66,7 +107,7 @@
   <body>
    
      <!-- Header Section -->
-    <header style="background-color: burlywood; padding: 15px;" >
+    <header id="head">
       <i class="fa fa-user fa-lg" aria-hidden="true"></i>
       <span class="header-info">Vashim Nadaf </span> 
       <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>  
@@ -74,7 +115,7 @@
       <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
       <span class="header-info">vashimnadaf12@gmail.com </span> 
       <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>        
-</header>
+    </header>
 
     <!-- Navigation Section -->
     <nav>
@@ -91,12 +132,12 @@
        <!-- HOME Section -->
       <section id="home">
         <h2 class="heading">Career Objectives</h2>
-        <p>
+        <p id="objectives">
           TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH
         </p>
         <h2 class="heading">Professional Summary &nbsp; &nbsp; &nbsp; 
          </h2>
-        <ul>
+        <ul id="listSummary">
           <li>Having 1 years experience in developing Single page Web Applications using <span id="angular">Angular 8</span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
           <li >Experience on working with version control system - GIT and GitHub</li>
           <li class="line">Experience working with JIRA for user stories and bug tracking</li>
@@ -111,8 +152,8 @@
       <hr>
       <!-- Technology stack section -->
       <section id="techStack">
-        <h2>My Technology stack</h2>
-           <table border="">
+        <h2 class="heading">My Technology stack</h2>
+           <table id="techTable">
             <thead>
               <tr>
                 <th>Sr.No</th>
@@ -147,13 +188,13 @@
       <hr>
         <!-- Project Section -->
         <section id="project">
-          <h2>Projects</h2>
-          <p><strong>Name:</strong> &nbsp; &nbsp; <strong><u>Student Management</u></strong>
+          <h2  class="heading">Projects</h2>
+          <p><span id="management"><strong>Name:</strong></span> <strong><u>Student Management</u></strong>
           </p>
-      <p><strong><u>Environment:</u></strong> &nbsp; &nbsp; Angular, React, Java, JavaScript, HTML, CSS, Bootstrap, GitHub, Agile and JIRA.
+      <p><span id="management"><strong><u>Environment:</u></strong></span> Angular, React, Java, JavaScript, HTML, CSS, Bootstrap, GitHub, Agile and JIRA.
       
       </p>
-      <p><strong>Team Size:</strong> 06 &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;<strong>Duration:</strong>2021-1 <sup>st</sup>- July till <u>present</u> 
+      <p><span id="management"><strong>Team Size:</strong> 06</span> <strong>Duration:</strong>2021-1 <sup>st</sup>- July till <u>present</u> 
       
       </p>
       <p><strong>Project Description:</strong>This project is mainly used for student management in colleges, Where it helps to manage student record like <br>
@@ -162,9 +203,9 @@
       </p>
       <hr>
       
-      <h2><strong>Roles And Responsibilities</strong></h2>
+      <h2 class="heading"><strong>Roles And Responsibilities</strong></h2>
       
-      <ul>
+      <ul id="listSummary">
           <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
           <li>Work closely with backend developers for code integration</li>
           <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -179,8 +220,8 @@
   
         <!-- Education Section -->
         <section id="education">
-          <h2>Education Details</h2>
-          <table border="1">
+          <h2  class="heading">Education Details</h2>
+          <table>
             <thead>
               <tr>
                 <th>Qualification</th>
@@ -221,34 +262,34 @@
         <hr>
         <!-- Personal Details -->
         <section id="personalDetails">
-          <h2>Personal Details</h2>
+          <h2  class="heading">Personal Details</h2>
           <img src="assets/developers.png" alt=""> <br>
    
-          <strong>Name:</strong> Vashim Nadaf <br>
+         <p> <strong>Name:</strong> Vashim Nadaf</p> <br>
       
-          <strong>Mobile:</strong>9766368726 <br>
-      
-       <strong>Email:</strong>vashimnadaf12@gmail.com <br>
-       <strong>Date Of Birth:</strong>12 Nov 2001 <br>
-       <strong>Address:</strong>Pune,Maharashtra <br>
+         <p> <strong>Mobile:</strong>9766368726 </p> <br>
+       
+       <p><strong>Email:</strong>vashimnadaf12@gmail.com</p> <br>
+      <p> <strong>Date Of Birth:</strong>12 Nov 2001 </p> <br>
+      <p> <strong>Address:</strong>Pune,Maharashtra </p><br>
        <details>
-          <summary>Family Details</summary>
-          <ul>
+          <summary id="listSummary">Family Details</summary>
+          <ul id="listSummary">
               <li>Father Name: Badeso Nadaf</li>
               <li>Mother Name: Lailbi Nadaf</li>
           </ul>
        </details>
-
+ 
         </section>
         <hr>
         <!-- Others -->
         <section id="others">
-          <h2>Others</h2>
+          <h2  class="heading">Others</h2>
           <!-- Hobbies : any 3 -->
          
           <!-- Personal Strength : any 3 -->
           <!-- Achievements -->
-          <ul>
+          <ul id="listSummary">
             <li>Hobbies</li>
             <ul>
              <li>Playing Cricket</li>
@@ -275,7 +316,7 @@
       <a href="https://www.linkedin.com/" target="_blank"><span class="icon"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></span></a> 
       <a href="https://www.facebook.com/" target="_blank"><span class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
     </footer>
-    <section>
+    <section id="copyright">
       <hr>
       <!-- Copy write section -->
       Copyright &copy;2024 Vashim Nadaf Codemind Technology, Inc. All rights reserved.
