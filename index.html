@@ -86,11 +86,14 @@
       #copyright{
         font-family: "Poppins", sans-serif;
       }
-      #listSummary{
+      #listSummary li{
         font-family: "Poppins", sans-serif;
-
-
+        list-style-type:none;
       }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+    
       #head{
         font-family: "Poppins", sans-serif;
       }
@@ -100,7 +103,16 @@
       #management{
         padding: 15px;
       }
-
+      #roles{
+        list-style-type: lower-alpha;
+       
+      }
+      #roles li{
+        padding-top: 8px;
+      }
+      #projectDesc::selection{
+      background-color: rgb(241, 193, 104);
+    }
 
     </style>
   </head>
@@ -139,8 +151,8 @@
          </h2>
         <ul id="listSummary">
           <li>Having 1 years experience in developing Single page Web Applications using <span id="angular">Angular 8</span>, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
-          <li >Experience on working with version control system - GIT and GitHub</li>
-          <li class="line">Experience working with JIRA for user stories and bug tracking</li>
+          <li>Experience on working with version control system - GIT and GitHub</li>
+          <li>Experience working with JIRA for user stories and bug tracking</li>
           <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
           <li>Working exposure on ID's like VS Code and Notepad++</li>
           <li>Good working experience under Agile methodologies environment</li>
@@ -197,7 +209,7 @@
       <p><span id="management"><strong>Team Size:</strong> 06</span> <strong>Duration:</strong>2021-1 <sup>st</sup>- July till <u>present</u> 
       
       </p>
-      <p><strong>Project Description:</strong>This project is mainly used for student management in colleges, Where it helps to manage student record like <br>
+      <p id="projectDesc"><strong>Project Description:</strong>This project is mainly used for student management in colleges, Where it helps to manage student record like <br>
           student registration, student update and to see all the list of academic activities like score card and attendence.
           
       </p>
@@ -205,7 +217,7 @@
       
       <h2 class="heading"><strong>Roles And Responsibilities</strong></h2>
       
-      <ul id="listSummary">
+      <ol id="roles">
           <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
           <li>Work closely with backend developers for code integration</li>
           <li>Identifying and troubleshooting issues in front end codebase</li>
@@ -213,7 +225,7 @@
           <li>Used JIRA for bug tracking</li>
           <li>Implemented project using Agile SCRUM methodology, involved in daily stand up calls, sprint retrospective meetings</li>
           <li>Involved in fixing technical issues in production environment</li>
-      </ul>
+      </ol>
   
         </section>
         <hr>
@@ -274,10 +286,10 @@
       <p> <strong>Address:</strong>Pune,Maharashtra </p><br>
        <details>
           <summary id="listSummary">Family Details</summary>
-          <ul id="listSummary">
+          <ol id="listSummary">
               <li>Father Name: Badeso Nadaf</li>
               <li>Mother Name: Lailbi Nadaf</li>
-          </ul>
+          </ol>
        </details>
  
         </section>
@@ -289,20 +301,20 @@
          
           <!-- Personal Strength : any 3 -->
           <!-- Achievements -->
-          <ul id="listSummary">
+          <ol>
             <li>Hobbies</li>
-            <ul>
+            <ol>
              <li>Playing Cricket</li>
              <li>Listening Songs</li>
              <li>Traveling</li>
             </ul>
             <li>My Strengths</li>
-            <ul>
+            <ol>
              <li>Positive Mindset</li>
              <li>Fast Learning </li>
              <li>Hardworking</li>
-            </ul>
-         </ul>
+            </ol>
+          </ol>
          Achievements:I got Certificate In District Level Cricket Tournament
     
         <hr>
