@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Card</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <!-- Google Font Family -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet"
+   />
+    <style>
+      
+    /* Universal Selector */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    
+}
+#photo{
+    
+            margin: 10px 10px;
+}
+#info,#photo{
+display: inline-block;
+margin-left: 10px;
+        }
+        #info li::marker{
+        content:"☻";
+        color: rgb(246, 86, 22);
+        }
+       h2{
+        padding: 10px;
+        font-style:normal;
+        font-family: "Roboto", sans-serif;
+       }
+       .mainSection{
+        background: white;
+        width: 600px;
+        height: 300px;
+        padding: 20px;
+        margin: 50px auto 0;
+        box-shadow: 0 0 7px 4px;
+       }
+       
+       #stocks{
+        color: rgb(42, 203, 225);
+        padding: 5px;
+        font-style:bolder;
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+       }
+       p{
+           margin-top: 5px%;
+          font-size: 25px;
+          color: white;
+      
+        }
+        #arrow{
+        color: rgb(103, 249, 249);
+        margin-left: 90%;
+        margin-top:10px;
+       }
+        p,#arrow{
+            display:inline-block;
+    
+       }
+       .secondPage{
+        background: rgba(23, 5, 5, 0.579);
+        width: 600px;
+        height: 400px;
+        padding: 15px;
+        margin: 50px auto 0;
+        box-shadow: 0 0 7px 4px;
+       }
+       
+    </style>
+  </head>
+  <body>
+    <!-- Main Section -->
+    <section class="mainSection">
+      <!-- Photo Section -->
+      <section id="photo">
+        <img src="assets/developer.png.png" alt="developer" />
+      </section>
+      <!-- Info Section -->
+      <section id="info">
+        <h2>Compare Text Online</h2>
+        <ul>
+          <li>Compare Text online free</li>
+          <li>Supports large file comparison</li>
+          <li>Ignore order or namespaces</li>
+          <li>side by side different view</li>
+          <li>Get results in tabular format for quick reference</li>
+          <li>Text diff tool</li>
+          <li>REST API</li>
+        </ul>
+      </section>
+    </section>
+    <!-- second page -->
+    <section class="secondPage">
+    <section id="stocks">
+<h2>2 Stocks Recommendation Weekly</h2>
+    </section>
+    <section id="arrow">
+        <span style='font-size:100px;'>&#11166;</span>
+    </section>
+    <section>
+<p> Midcap stocks Gaining <br> after 30-40%fall from<br> 52 Week High</p>
+</section>
+</section>
+  </body>
+</html>
