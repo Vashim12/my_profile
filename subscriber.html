@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+      .box{
+        width: 390px;
+        height: 600px;
+        background-color:white;
+        border: 2px solid gainsboro;
+        margin: 20px auto;
+        box-sizing: border-box;
+        box-shadow: black;
+      }
+      .inner-box{
+        width: 360px;
+        height: 220px;
+        margin: 3px auto;
+        background-color: rgb(36, 36, 230);
+        border-radius: 8px;
+      }
+      h3{
+        margin-left: 10px;
+        font-family: "Roboto", sans-serif;
+      }
+      p{
+        padding-left: 10px;
+        font-size: 17px;
+        padding-top: 15px;
+        color:whitesmoke;
+        font-family: "Roboto", sans-serif;
+      }
+      #star{
+        color: red;
+      }
+      .e-mail{
+        width: 94%;
+        padding-top: 9px;
+        margin-top: 5px;
+        border-radius: 8px;
+        background-color: ghostwhite;  
+      }
+      .mail{
+        margin-left: 10px;
+        padding-top: 13px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+      }
+      .reason{
+        padding-left: 10px;
+        padding-top: 20px;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+      }
+      .reason-box{
+        width: 94%;
+        padding-bottom: 25px;
+        border-radius: 8px;
+        margin-top: 5px;
+        background-color: ghostwhite;
+      }
+      #us-button{
+        background-color:ghostwhite;
+        position: relative;
+        padding-right: 10px;
+        left: 250px;
+        top: 50px;
+        width: 30%;
+        padding: 3px;
+        border-radius: 6px;
+        font-weight: 800;
+        color: rgba(55, 55, 55, 0.837);
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+</head>
+<body>
+  <section class="box">
+    <section>
+      <h3>Subscriber</h3>
+      <div  class="inner-box">
+      <p>We're sorry to see you go, but hey, no hard <br>
+        feelings, hopefully we will see you back <br>
+        one day. <br>
+        Please fill in your email address in order to <br>
+        unsubscribe from the list. <br>
+        You will recieve an email to confirm your <br>
+        unsubscription, just to make sure this is <br>
+        not an accident or somebody else tries to <br>
+        unsubscribe you. <br>
+      </p>
+    </div>
+    <div class="mail"><label for="email">Email <span id="star">*</span></label> <br>
+    <input type="text" class="e-mail">
+     </div>
+     <div  class="reason">
+      <label for="text">Unsubscribe Reason</label> <br>
+      <input type="text" placeholder="Unsubscribe reason" class="reason-box">
+     </div>
+     <div>
+      <button type="submit" id="us-button">Unsubscribe</button>
+     </div>
+    </section>
+  </section>
+</body>
+</html>
